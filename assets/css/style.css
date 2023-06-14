@@ -1,23 +1,21 @@
 body {
   color: #333;
   font-size: 18px;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #f4f4f4;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .profile-pic {
   border: 6px solid #00796b;
-  border-radius: 50% !important;
-  max-width: 130px;
-  max-height: 130px;
-  width: auto;
-  height: auto;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
   overflow: hidden;
-}
-
-.profile-pic img {
-  width: 100%;
-  height: auto;
 }
 
 .icon-btn {
@@ -26,19 +24,21 @@ body {
   color: #00796b;
   cursor: pointer;
   font-size: 30px;
-  line-height: 70px;
-  border-radius: 45px;
-  margin: 4px;
+  line-height: 50px;
+  border-radius: 50%;
+  margin: 5px;
+  transition: transform 0.3s;
 }
 
 .icon-btn:hover {
   transform: scale(1.10);
   color: #FFFFFF;
+  background-color: #00796b;
 }
 
-.readme {
+.readme,
+.contactme {
   padding: 11px 35px;
-  background: #00796b;
   color: #fff;
   border: 2px solid #00796b;
   font-weight: 600;
@@ -46,23 +46,36 @@ body {
   letter-spacing: 1px;
   display: inline-block;
   border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.readme {
+  background: #00796b;
+}
+
+.readme:hover {
+  background: #00574b;
 }
 
 .contactme {
-  padding: 11px 35px;
   background: #fff;
   color: #00796b;
-  border: 2px solid #00796b;
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 1px;
-  display: inline-block;
   margin-top: 1.5em;
-  border-radius: 5px;
+}
+
+.contactme:hover {
+  background: #00796b;
+  color: #fff;
 }
 
 a {
   color: #00796b;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #00574b;
 }
 
 blockquote {
@@ -76,20 +89,25 @@ blockquote {
 
 nav {
   background: white;
-  box-shadow: none;
-  height: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
 }
 
 main {
   background: white;
   padding-left: 190px;
+  padding-right: 190px;
 }
 
 ul.side-nav.fixed a {
   color: #00796b;
   display: block;
   line-height: 100%;
-  padding: 10px 0 12px;
+  padding: 10px 0;
 }
 
 ul.side-nav.fixed li.logo {
@@ -97,23 +115,25 @@ ul.side-nav.fixed li.logo {
   border-bottom: 1px solid #ddd;
   box-sizing: content-box;
   min-height: 90px;
-  padding: 30px 30px 40px;
+  padding: 30px;
 }
 
 a.hoverline:hover {
-  border-bottom: 3px solid #00796b !important;
+  border-bottom: 3px solid #00796b;
 }
 
 .teal-text {
-  color: #00796b !important;
+  color: #00796b;
 }
 
 .teal {
-  background-color: #00796b !important;
+  background-color: #00796b;
 }
 
 .card {
   background: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 60px;
+  border-radius: 5px;
+  overflow: hidden;
 }

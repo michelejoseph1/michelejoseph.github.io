@@ -1,42 +1,20 @@
-<<<<<<< HEAD
-body {
-  color: #333;
-  font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #f4f4f4;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.profile-pic {
-  border: 6px solid #00796b;
-  border-radius: 50%;
-  width: 130px;
-  height: 130px;
-  object-fit: cover;
-=======
 .profile-pic {
   position: relative;
-  max-width:130px;
-  max-height:130px;
+  max-width: 130px;
+  max-height: 130px;
   width: auto;
   height: auto;
->>>>>>> parent of cd5c775 (mofidy css)
   overflow: hidden;
   /* display: inline-block; */
-  
-  
+
+
   /* background-size: cover;  */
-  margin: -31px; 
-  margin-left:-7px;
-  border: 6px solid rgba(0, 77, 64, 0.4); 
+  margin: -31px;
+  margin-left: -7px;
+  border: 6px solid rgba(0, 77, 64, 0.4);
   border-radius: 50% !important;
 }
 
-<<<<<<< HEAD
-=======
 .profile-pic img {
   width: 100%;
   height: auto;
@@ -46,11 +24,12 @@ body {
   /* visibility: hidden; */
   position: fixed;
   /* margin-inline-end: auto;  */
-  bottom: 0; 
+  bottom: 0;
   right: 0;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
 .social {
   margin: 0 auto;
   width: auto;
@@ -58,7 +37,6 @@ body {
   /* padding: 10px; */
 }
 
->>>>>>> parent of cd5c775 (mofidy css)
 .icon-btn {
   margin-left: auto;
   width: 50px;
@@ -67,17 +45,10 @@ body {
   color: #FFFFFF;
   cursor: pointer;
   font-size: 30px;
-<<<<<<< HEAD
-  line-height: 50px;
-  border-radius: 50%;
-  margin: 5px;
-  transition: transform 0.3s;
-=======
   line-height: 70px;
   border-radius: 45px;
   display: inline-block;
   margin: 4px;
->>>>>>> parent of cd5c775 (mofidy css)
 }
 
 .github {
@@ -95,16 +66,8 @@ body {
 .icon-btn:hover {
   transform: scale(1.10);
   color: #FFFFFF;
-  background-color: #00796b;
 }
 
-<<<<<<< HEAD
-.readme,
-.contactme {
-  padding: 11px 35px;
-  color: #fff;
-  border: 2px solid #00796b;
-=======
 .linkedin:hover {
   background-color: #0077b5;
 }
@@ -125,25 +88,12 @@ body {
   background: #fff;
   color: #00796b;
   border: 2px solid #fff;
->>>>>>> parent of cd5c775 (mofidy css)
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
   border-radius: 5px;
-<<<<<<< HEAD
-  transition: background 0.3s, color 0.3s;
-}
-
-.readme {
-  background: #00796b;
-}
-
-.readme:hover {
-  background: #00574b;
-=======
   -webkit-border-radius: 5px;
->>>>>>> parent of cd5c775 (mofidy css)
 }
 
 /* .readme:hover{
@@ -152,16 +102,6 @@ body {
 } */
 
 .contactme {
-<<<<<<< HEAD
-  background: #fff;
-  color: #00796b;
-  margin-top: 1.5em;
-}
-
-.contactme:hover {
-  background: #00796b;
-  color: #fff;
-=======
   position: relative;
   padding: 11px 35px;
   background: none;
@@ -174,22 +114,13 @@ body {
   margin-top: 1.5em;
   border-radius: 5px;
   -webkit-border-radius: 5px;
->>>>>>> parent of cd5c775 (mofidy css)
 }
 
-.contactme:hover{
+.contactme:hover {
   color: #00796b;
-<<<<<<< HEAD
-  text-decoration: none;
-  transition: color 0.3s;
+  background-color: white;
 }
 
-a:hover {
-  color: #00574b;
-=======
-  background-color: white;
->>>>>>> parent of cd5c775 (mofidy css)
-}
 /* main body */
 
 /* body-color */
@@ -247,12 +178,8 @@ blockquote * {
 
 nav {
   background: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
+  box-shadow: none;
+  height: 0;
 }
 
 /* nav {
@@ -277,7 +204,6 @@ nav i {
 main {
   background: url(../../assets/img/bg.png) repeat;
   padding-left: 190px;
-  padding-right: 190px;
 }
 
 dl {
@@ -316,10 +242,11 @@ ul.side-nav.fixed a {
   color: rgb(16, 202, 56);
   display: block;
   line-height: 100%;
-  padding: 10px 0;
+  padding: 10px 0 12px;
 }
 
-ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
+ul.table-of-contents li.logo a.active,
+ul.table-of-contents li.logo a:hover {
   border: none;
   font-weight: 200;
 }
@@ -337,7 +264,7 @@ ul.side-nav.fixed li.logo {
   border-bottom: 1px solid #ddd;
   box-sizing: content-box;
   min-height: 90px;
-  padding: 30px;
+  padding: 30px 30px 40px;
 }
 
 ul.side-nav.fixed li.logo a {
@@ -345,12 +272,14 @@ ul.side-nav.fixed li.logo a {
   line-height: 100%;
 }
 
-ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) a:hover {
+ul.table-of-contents li:not(.logo) a.active,
+ul.table-of-contents li:not(.logo) a:hover {
   background-color: #fafafa;
   border-left: 3px solid;
 }
 
-ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
+ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
+ul#slide-out li:not(.logo) a span {
   color: #333 !important;
 }
 
@@ -549,11 +478,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-<<<<<<< HEAD
-  border-bottom: 3px solid #00796b;
-=======
   border-bottom: 3px solid #004d40 !important;
->>>>>>> parent of cd5c775 (mofidy css)
 }
 
 #skills .card.large {
@@ -629,11 +554,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-<<<<<<< HEAD
-  color: #00796b;
-=======
   color: #008073 !important;
->>>>>>> parent of cd5c775 (mofidy css)
 }
 
 /* .teal-text {
@@ -643,17 +564,6 @@ small {
 /* .teal */
 
 .teal {
-<<<<<<< HEAD
-  background-color: #00796b;
-}
-
-.card {
-  background: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 60px;
-  border-radius: 5px;
-  overflow: hidden;
-=======
   background-color: #008073 !important;
 }
 
@@ -686,34 +596,42 @@ small {
     padding-left: 0px;
     padding-top: 64px;
   }
+
   ul.side-nav a {
     line-height: 100%;
     padding: 0;
     width: 100%;
   }
+
   nav {
     background: #fff;
     height: 64px;
     position: absolute;
   }
-  nav a.button-collapse, nav a.button-collapse i {
+
+  nav a.button-collapse,
+  nav a.button-collapse i {
     color: #009688;
     height: 56px;
     line-height: 56px;
   }
+
   h3 {
     padding: 20px 30px;
     margin-bottom: 40px;
   }
+
   .container {
     margin: 0 auto;
   }
+
   nav.hide-on-large.only.trigger {
     display: block;
     position: fixed;
     top: 0;
     z-index: 2;
   }
+
   .name-title {
     display: block;
     height: 100%;
@@ -722,25 +640,33 @@ small {
     width: 100%;
     position: absolute;
   }
-  .name-title>span, .name-title>a {
+
+  .name-title>span,
+  .name-title>a {
     position: relative;
     line-height: 20px;
   }
+
   .name-title a {
     font-size: 22px;
     display: block;
   }
+
   .name-title span {
     display: block;
     font-size: 14px;
   }
-  h3, .container {
+
+  h3,
+  .container {
     position: relative;
     top: 64px;
   }
+
   section#intro {
     margin-bottom: -64px;
   }
+
   .card .role {
     position: relative;
     right: initial;
@@ -754,37 +680,44 @@ small {
     line-height: 200%;
     margin: 30px 0 0;
   }
+
   #intro.section .container *:not(span) {
     padding: 0;
   }
+
   .card .card-content .card-title {
     font-size: 20px;
     line-height: 24px;
   }
+
   #experience span.card-title {
     text-align: center;
     display: block;
   }
+
   #experience span.card-title a {
     margin: 0;
   }
+
   i.mdi-navigation-close.right {
     position: relative;
     bottom: 15px;
   }
+
   #contact a:not(.btn-floating) {
     text-align: center;
     display: block;
     left: initial;
     bottom: initial;
   }
+
   #contact a.btn-floating.btn-large {
     display: block;
     text-align: center;
     margin: 0 auto;
   }
+
   #intro.section {
     background-position-x: 30%;
   }
->>>>>>> parent of cd5c775 (mofidy css)
 }
